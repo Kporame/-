@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+}
+/*------------------Menu and VDO-----------------*/
+.container{
+   max-width: 1140px;
+   margin: 0 auto;
+}
+.container1{
+   max-width: 300px;
+   margin: 0 auto;
+}
+
+.banner {
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.navbar {
+   width: 90%;
+   padding: 30px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo {
+   width: 250px;
+   margin-top: -10px;
+   cursor: pointer;
+}
+
+.navbar ul {
+   list-style: none;
+   display: flex;
+   margin: 0;
+   margin-left: auto;
+}
+
+.navbar ul li {
+   margin: 0 20px;
+}
+
+.navbar ul li a {
+   font-family: "Bungee", sans-serif;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   font-weight: 100; /*---ปรับขนาดตัวหนังสือmenu---*/
+   padding: 15px;
+}
+
+.navbar ul li a:hover {
+   background: white;
+   transition: 0.5s;
+   color: black;
+}
+
+.content {
+   width: 1600px; /* Adjust width as necessary */
+   position: absolute;
+   color: white;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.content h1 {
+   font-family: "Sarabun", sans-serif;
+   margin-top: 250px;
+   font-size: 60px;
+   font-weight: 800;
+   /* background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)); */
+}
+
+.content h2 {
+   font-family: "Sarabun", sans-serif;
+   margin-top: 10px;
+   font-size: 20px;
+   font-weight: 300;
+}
+
+button {
+   font-family: "Sarabun", sans-serif;
+   width: 200px;
+   padding: 10px;
+   top: 2000px;
+   margin: 20px 5px;
+   text-align: center;
+   border-radius: 25px;
+   color: black;
+   border: 5vi;
+   font-size: 20px;
+   cursor: pointer;
+   font-weight: 400;
+}
+
+button:hover {
+   background: pink;
+   transition: 0.5s;
+   color: white;
+}
+
+.banner video {
+   width: 100%;
+   height: 100%; /* Ensure the video covers the entire banner */
+   object-fit: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+/*------------------Box1-----------------*/
+.box1 {
+   width: 100%;
+   height: 100%;
+   background-image: url('../img/dried-flower-twig.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; /* Ensures the image covers the entire box */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.hero-con{
+   display: flex;
+}
+.hero-info{
+   width: 100%;
+   padding: 2rem;
+}
+.hero-info h3{
+   font-size: 2rem;
+   
+}
+.hero-info p {
+   margin: 1rem 0;
+}
+
+.hero-info .hero-btn{
+   display: inline-block;
+   padding: 1rem;
+   text-decoration: none;
+   border-radius: 10px;
+}
+.hero-img img{
+   padding: 2rem;
+   width: 500px;
+   height: 400px;
+}
+
+.navbar ul li a:hover {
+   background: white;
+   transition: 0.5s;
+   color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------media-----------------*/
+@media(min-aspect-ratio: 16/9) {
+   .banner video {
+       width: 100%;
+       height: 0 auto;
+   }
+}
+@media (max-width:991px){
+    html{
+        font-size: 13px; 
+    }
+    .banner{
+        padding: 2rem;
+    }
+
+    .content h1{
+        font-size: 50px;
+    }
+}
+@media (max-width:768px){
+    .banner{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+    .navbar ul li a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+}
